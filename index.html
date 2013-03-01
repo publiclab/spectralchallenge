@@ -13,6 +13,7 @@ and justice issues. PLOTS provides an online research space for citizens, linkin
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/stylesheets/bootstrap.css?1359217150" media="all" rel="stylesheet" type="text/css" />
     <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -44,115 +45,56 @@ and justice issues. PLOTS provides an online research space for citizens, linkin
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <style>
+<!--
+    <img class="hidden-desktop hidden-tablet" id="ribbon" src="/ribbon.png" width="200px" />
+    <img class="hidden-phone" id="ribbon" src="/ribbon.png" width="279px;" />
+-->
 
-h1 {
-  font-size:5em;
-  margin:20px 0;
-}
-
-#header { margin-left:350px; }
-#header h1 { 
-  margin-top:100px;
-  font-size:3em;
-}
-
-#header li a { 
-  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
-  background:white;
-  margin-left:10px; 
-  padding:16px 12px 12px;
-}
-
-.large p {
-  line-height:1.7em;
-  font-size:1.7em;
-  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
-}
-
-#actions {
-  margin-top:50px;
-}
-#actions .btn {
-  margin-left:40px;
-  width:150px;
-  height:100px;
-  padding:40px 10px 20px;
-  font-size:2.2em;
-  border:5px solid #555;
-  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
-}
-
-#actions .btn img {
-  padding-bottom:20px;
-}
-
-#whatisit {
-}
-
-#challenges {
-  color:white;
-}
-
-.wepay-donations-progress-widget-wrapper {
-  text-align:left;
-}
-.wepay-donations-progress-widget {
-  padding:12px;
-}
-#count .moneys {
-  margin-top:40px;
-  margin-bottom:30px; 
-  color:#444;
-}
-
-.wepay-widget-button {
-  font-size:1.8em;
-}
-
-.social {
-  margin-top:50px;
-  padding-top:12px;
-  border-top:1px  solid #bbb;
-}
-    </style>
-
-    <div style="background:#d6d6d6;">
-      <div class="container" style="background:url('ribbon.png') 0 0 no-repeat;height:500px;">
+    <div id="header-container">
  
       <div id="header">
-        <ul class="nav nav-pills pull-right">
+        <ul class="nav nav-pills pull-right hidden-phone">
           <li><a class="btn-link btn-large" href="#whatisit">What is it?</a></li> 
           <li><a class="btn-link btn-large" href="#challenges">Challenges</a></li> 
           <li><a class="btn-link btn-large" href="#prizes">Prizes</a></li> 
           <li><a class="btn-link btn-large" href="#faq">FAQ</a></li> 
         </ul>
-        <h1>Spectral Challenge <small>by <a href="http://publiclaboratory.org">Public Lab</a></h1>
+
+        <div class="text">
+        <h1>Spectral Challenge</h1>
+        <h3>by <a href="http://publiclaboratory.org">Public Lab</a></h3>
 
         <div id="actions">
-          <a class="btn" href="#enter"><img src="/images/logo.png"/><br />Enter!</a>
-          <a class="btn" href="#back"><img src="/images/logo.png"/><br />Donate!</a>
+          <a class="btn" href="#challenges">
+            <img class="hidden-phone" src="/images/logo.png"/>
+            <br class="hidden-phone" />Enter!</a>
+          <a class="btn" href="#prizes">
+            <img class="hidden-phone" src="/images/logo.png"/>
+            <br class="hidden-phone" />Donate!</a>
+          <br style="clear:both;" />
         </div>
 
         <div class="social">
           <div class="fb-like" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" style="vertical-align:top;zoom:1;*display:inline"></div>
-            <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          <a href="https://twitter.com/PublicLab" class="twitter-follow-button" data-show-count="false">Follow @PublicLab</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          &nbsp; <a href="https://twitter.com/PublicLab" class="twitter-follow-button" data-show-count="false">Follow @PublicLab</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          &nbsp; <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
+        </div>
+        <br style="clear:both;" />
 
       </div>
     </div>
 
+    <a name="whatisit"></a>
     <div style="background:white;padding:20px 0;">
-    <div class="container">
-      <a name="whatisit"></a>
+    <div class="container band">
 
       <h1>What is it?</h1>
-      <div id="whatisit" class="row-fluid large">
+      <div id="whatisit" class="row-fluid">
         <div class="span6">
-          <p>SpectralChallenge is a call to makers worldwide to tackle real-world environmental problems with low-cost, open source spectrometry.</p>
+          <p>Spectral Challenge is a call to makers worldwide to tackle real-world environmental problems with low-cost, open source spectrometry.</p>
         </div>
         <div class="span6">
           <p>We're talking about the dream of taking a device you've constructed into your neighborhood and testing for heavy metals, oil contamination, or other toxics, without needing to have a PhD or knowing how to program
@@ -162,34 +104,35 @@ h1 {
     </div>
     </div>
 
+    <a name="challenges"></a>
     <div style="background:#554488;padding:20px 0;">
-    <div class="container">
-      <a name="challenges"></a>
+    <div class="container band dark">
 
       <h1 style="color:white;">Two Challenges</h1>
-      <div id="challenges" class="row-fluid large">
+      <div id="challenges" class="row-fluid">
         <div class="span6">
-          <h2>Stage 1</h2>
-          <p>SpectralChallenge is a call to makers worldwide to tackle real-world environmental problems with low-cost, open source spectrometry.</p>
+          <h2>Stage 1: Learning</h2>
+          <p>The goal of Stage 1 is to support and encourage the thousands of people building and using open source spectrometers by sharing your experiences learning about the process of open source spectrometry for the whole community.</p>
         </div>
         <div class="span6">
-          <h2>Stage 2</h2>
-          <p>We're talking about the dream of taking a device you've constructed into your neighborhood and testing for heavy metals, oil contamination, or other toxics, without needing to have a PhD or knowing how to program
-.</p>
+          <h2>Stage 2: Real World Use</h2>
+          <p>The goals of Stage Two is to use a lowcost, open source spectrometer to identify environmental contaminants.</p>
+          <p><a href="http://publiclaboratory.org/wiki/spectral-challenge#challenges">Read about the challenges and enter &raquo;</a>
         </div>
       </div>
     </div>
     </div>
 
+    <a name="prizes"></a>
     <div style="padding:20px 0;">
-    <div class="container">
-      <a name="prizes"></a>
+    <div class="container band">
 
       <h1>Prizes</h1>
-      <div id="prizes" class="row-fluid large">
+      <div id="prizes" class="row-fluid">
         <div class="span6">
           <h2>A crowdfunded prize</h2>
-          <p>SpectralChallenge is a call to makers worldwide to tackle real-world environmental problems with low-cost, open source spectrometry.</p>
+          <p>Spectral Challenge 2013 is like an X-Prize for DIY science, but it's crowdfunded -- this means that if you really believe in the goals of the Challenge, you should back them by donating to the prize pool! You can also help by getting the word out to find pool contributions!</p>
+          <p><a href="http://publiclaboratory.org/wiki/spectral-challenge#prizes">Read more about the prizes &raquo;</a></p>
         </div>
         <div class="span6">
           <h2>Donate now!</h2>

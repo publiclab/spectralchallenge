@@ -1,0 +1,112 @@
+body {
+  padding:0;
+}
+
+a, a.btn {
+ color:#54a; 
+}
+a:hover, a.btn:hover {
+ color:#548; 
+}
+
+h1 {
+  font-size:5em;
+  margin:20px 0;
+  line-height:1.2em;
+}
+
+#header-container {
+  background-color: #d6d6d6;
+}
+#header { 
+  background:url('/ribbon.png') 10% 0 no-repeat;
+  padding-left:43%;
+  height:auto;
+}
+#header h1 { 
+  margin-top:100px;
+  font-size:3em;
+  margin-bottom:10px;
+}
+#header h3 { margin-top:4px; }
+#header li a { 
+  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
+  background:white;
+  margin-left:10px; 
+  padding:16px 12px 12px;
+}
+
+#header .text {
+  float:right;
+}
+
+#actions {
+  margin-top:30px;
+}
+#actions .btn {
+  margin-left:20px;
+  color:#444;
+  padding:20px;
+  font-size:2.2em;
+  border-width:3px;
+  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
+}
+#actions .btn img {
+  padding-bottom:20px;
+}
+
+.band {
+  padding:0 20px;
+}
+.band p {
+  line-height:1.5em;
+  font-size:1.5em;
+  font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
+}
+
+.band.dark h1 {
+  text-shadow: 0 -2px 0 #336;
+}
+.band.dark p, .band.dark h3 {
+  color: #aaf;
+}
+.band.dark a {
+  color: white;
+}
+
+#challenges {
+  color:white;
+}
+
+#count .wepay-donations-progress-widget-wrapper {
+  text-align:left;
+}
+.wepay-donations-progress-widget {
+  padding:12px;
+}
+#count .moneys {
+  margin-top:40px;
+  margin-bottom:30px; 
+  color:#444;
+}
+#count .label {
+  font-family:lucida grande, lucida sans console, sans-serif;
+}
+
+.wepay-widget-button {
+  font-size:1.8em;
+}
+
+.social {
+  clear:both;
+  margin-top:30px;
+  margin-bottom:20px;
+  padding-top:12px;
+  border-top:1px  solid #bbb;
+}
+.social a {
+}
+
+footer {
+  padding:10px 20px;
+}
