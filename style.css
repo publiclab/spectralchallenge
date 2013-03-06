@@ -81,8 +81,13 @@ h1 {
 .band.dark p, .band.dark li, .band.dark h3 {
   color: #aaf;
 }
-.band.dark a {
+.band.dark a, .band.dark h2, .band.dark h1, .band.dark b {
+  font-weight:normal;
   color: white;
+}
+
+.band .row-fluid .span4 {
+  margin-bottom:30px;
 }
 
 #challenges {
