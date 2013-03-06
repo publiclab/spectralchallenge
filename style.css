@@ -10,7 +10,7 @@ a:hover, a.btn:hover {
 }
 
 h1 {
-  font-size:5em;
+  font-size:4em;
   margin:20px 0;
   line-height:1.2em;
 }
@@ -19,7 +19,7 @@ h1 {
   position:absolute;
   top:0;
   left:10%;
-  width:27%;
+  width:22%;
 }
 
 #header-container {
@@ -34,7 +34,11 @@ h1 {
   font-size:4em;
   margin-bottom:10px;
 }
-#header h3 { margin-top:4px;font-size:2em; }
+#header h3 { 
+  margin-top:4px;
+  font-size:2em; 
+  color:#666;
+}
 #header li a { 
   font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
   background:white;
@@ -61,16 +65,20 @@ h1 {
 .band {
   padding:0 20px;
 }
-.band p {
+.band p, .band li {
   line-height:1.5em;
   font-size:1.5em;
   font-family:junctionregular, lucida grande,lucida sans console,sans-serif;
+}
+.band li {
+  font-size:1.2em;
+  margin-bottom:8px;
 }
 
 .band.dark h1 {
   text-shadow: 0 -2px 0 #336;
 }
-.band.dark p, .band.dark h3 {
+.band.dark p, .band.dark li, .band.dark h3 {
   color: #aaf;
 }
 .band.dark a {
@@ -84,7 +92,8 @@ h1 {
 #count .wepay-donations-progress-widget-wrapper {
   text-align:left;
 }
-.wepay-donations-progress-widget {
+#prizes .wepay-donations-progress-widget-wrapper .wepay-donations-progress-widget {
+  width:90%;
   padding:12px;
 }
 #count .moneys {
