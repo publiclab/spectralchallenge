@@ -86,7 +86,7 @@ h1 {
   color: white;
 }
 
-.band .row-fluid {
+.band .row-fluid .span4 {
   margin-bottom:30px;
 }
 
